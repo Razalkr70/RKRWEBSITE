@@ -1,0 +1,90 @@
+.leads-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.page-header.justify-between {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.leads-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.leads-toolbar {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.leads-search {
+  max-width: 320px;
+}
+
+.toolbar-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.sort-select {
+  width: auto;
+  padding: 0.5rem 2rem 0.5rem 0.75rem;
+}
+
+.lead-row {
+  transition: background-color 0.2s;
+}
+
+.lead-row:hover {
+  background-color: var(--background);
+}
+
+.lead-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.lead-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #E0E7FF;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.pagination {
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-color);
+}
+
+.pagination-controls {
+  display: flex;
+  gap: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .leads-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .leads-search {
+    max-width: 100%;
+  }
+}
